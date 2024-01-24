@@ -1,12 +1,14 @@
+import HeroSection from "@/components/Home/HeroSection";
 import Container from "@/components/shared/Container";
 
 const Home = () => {
     return (
+        <div className="overflow-hidden">
         <Container>
-            <div>
-            Home
-        </div>
+           <HeroSection/>
         </Container>
+        </div>
+      
         
     );
 };
