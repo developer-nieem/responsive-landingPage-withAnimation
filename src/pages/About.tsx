@@ -1,9 +1,13 @@
+import Container from "@/components/shared/Container";
 
 const About = () => {
     return (
-        <div>
+        <Container>
+            <div>
             About
         </div>
+        </Container>
+        
     );
 };
 

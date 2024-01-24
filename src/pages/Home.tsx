@@ -1,9 +1,13 @@
+import Container from "@/components/shared/Container";
 
 const Home = () => {
     return (
-        <div>
+        <Container>
+            <div>
             Home
         </div>
+        </Container>
+        
     );
 };
 
