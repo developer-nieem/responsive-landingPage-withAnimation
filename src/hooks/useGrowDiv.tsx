@@ -1,0 +1,24 @@
+import { useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
+
+
+const useGrowDiv = () => {
+    const componentRef = useRef<HTMLDivElement>(null)
+
+    const {scrollYProgress} = useScroll({
+        target: componentRef,
+        offset : ['0 1', '1.5 1']
+    })
+    
+    const scaleValues = useTransform(scrollYProgress, [0 , 1], [0.8 , 1])
+    const opacityValues = useTransform(scrollYProgress , [0 , 1] , [0.1 , 1])
+    
+    const style  = {
+        scaleValues,
+        opacityValues
+    }
+    
+    return {componentRef , style}
+};
+
+export default useGrowDiv;

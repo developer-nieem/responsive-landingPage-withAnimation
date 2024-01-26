@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const NavBar = () => {
     return (
-        <header>
+        <header className="fixed w-full z-[999] bg-white">
             <nav className="w-full max-w-[1220px] px-[20px] mx-auto flex justify-between items-center h-20">
                 <div>
                     <h2 className="text-3xl">IRepair</h2>

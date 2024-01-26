@@ -31,7 +31,7 @@ const laptop = {
 
 const HeroSection = () => {
   return (
-    <div className=" h-[calc(100vh)] grid lg:grid-cols-2 items-center">
+    <div className="pt-32 h-screen  grid lg:grid-cols-2 items-center">
       <motion.div
         className="space-y-4 "
         variants={intro}
@@ -57,8 +57,8 @@ const HeroSection = () => {
         </motion.div>
        
       </motion.div>
-      <motion.div variants={laptop} initial="initial"  animate="animate">
-        <img src={mackbook} className="max-w-full object-contain" alt="" />
+      <motion.div  variants={laptop} initial="initial"  animate="animate">
+        <img src={mackbook} className="max-w-full object-contain h-full" alt="" />
       </motion.div>
     </div>
   );
